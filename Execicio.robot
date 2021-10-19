@@ -3,9 +3,9 @@
 
 *** Test Cases ***
 area 51
-    Log To Console  ${alienigena.nome}
-    Log To Console  ${alienigena.sobrenome}
-    Log To Console  ${alienigena.idade}
-    Log To Console  ${alienigena.genero}
-    Log To Console  ${alienigena.data_de_nascimento}
-    Log To Console  ${alienigena.comida_favorita}
+    Log To Console  \nNome: ${alienigena.nome}
+    Log To Console  Sobrenome: ${alienigena.sobrenome}
+    Log To Console  Idade: ${alienigena.idade}
+    Log To Console  Gênero: ${alienigena.genero}
+    Log To Console  Data de nascimento: ${alienigena.data_de_nascimento}
+    Log To Console  Comida favorita: ${alienigena.comida_favorita}
