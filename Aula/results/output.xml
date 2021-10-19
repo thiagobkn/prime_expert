@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 16:02:39.193" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercicio2" source="C:\Users\T-GAMER\Desktop\thiagobkn\PV\GIt hub\Prime\prime_expert\aula\exercicio2.robot">
+<test id="s1-t1" name="compras">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${Frutas[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 16:02:39.221" endtime="20211019 16:02:39.223"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Frutas[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 16:02:39.223" endtime="20211019 16:02:39.224"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Frutas[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 16:02:39.224" endtime="20211019 16:02:39.225"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Frutas[3]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 16:02:39.225" endtime="20211019 16:02:39.226"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Frutas[4]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 16:02:39.227" endtime="20211019 16:02:39.228"/>
+</kw>
+<status status="PASS" starttime="20211019 16:02:39.221" endtime="20211019 16:02:39.228"/>
+</test>
+<status status="PASS" starttime="20211019 16:02:39.195" endtime="20211019 16:02:39.229"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio2">Exercicio2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
