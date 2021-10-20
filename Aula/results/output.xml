@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 20:49:29.123" rpa="false" schemaversion="2">
-<suite id="s1" name="Exercicio3" source="C:\Users\T-GAMER\Desktop\thiagobkn\PV\GIt hub\Prime\prime_expert\aula\exercicio3.robot">
-<test id="s1-t1" name="email">
-<kw name="criação do email">
-<var>${email}</var>
-<arg>${pessoa.nome}</arg>
-<arg>${pessoa.sobrenome}</arg>
-<arg>${pessoa.idade}</arg>
-<arg>${pessoa.base_email}</arg>
-<msg timestamp="20211019 20:49:29.156" level="INFO">${email} = thiago_bassakin_21@robot.com</msg>
-<status status="PASS" starttime="20211019 20:49:29.153" endtime="20211019 20:49:29.157"/>
-</kw>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 22:04:54.462" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercicio5" source="C:\Users\T-GAMER\Desktop\thiagobkn\PV\GIt hub\Prime\prime_expert\aula\exercicio5.robot">
+<test id="s1-t1" name="Inicio">
+<kw name="paises">
+<for flavor="IN">
+<var>${paises}</var>
+<value>@{paises}</value>
+<iter>
+<var name="${paises}">Brasil</var>
 <kw name="Log To Console" library="BuiltIn">
-<arg>\n${email}</arg>
+<arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 20:49:29.157" endtime="20211019 20:49:29.157"/>
+<status status="PASS" starttime="20211019 22:04:54.504" endtime="20211019 22:04:54.505"/>
 </kw>
-<status status="PASS" starttime="20211019 20:49:29.152" endtime="20211019 20:49:29.158"/>
+<status status="PASS" starttime="20211019 22:04:54.504" endtime="20211019 22:04:54.505"/>
+</iter>
+<iter>
+<var name="${paises}">USA</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${paises}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 22:04:54.505" endtime="20211019 22:04:54.506"/>
+</kw>
+<status status="PASS" starttime="20211019 22:04:54.505" endtime="20211019 22:04:54.506"/>
+</iter>
+<iter>
+<var name="${paises}">Canada</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${paises}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 22:04:54.506" endtime="20211019 22:04:54.506"/>
+</kw>
+<status status="PASS" starttime="20211019 22:04:54.506" endtime="20211019 22:04:54.506"/>
+</iter>
+<iter>
+<var name="${paises}">Alemanha</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${paises}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 22:04:54.507" endtime="20211019 22:04:54.507"/>
+</kw>
+<status status="PASS" starttime="20211019 22:04:54.507" endtime="20211019 22:04:54.507"/>
+</iter>
+<iter>
+<var name="${paises}">Russia</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n${paises}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 22:04:54.507" endtime="20211019 22:04:54.507"/>
+</kw>
+<status status="PASS" starttime="20211019 22:04:54.507" endtime="20211019 22:04:54.508"/>
+</iter>
+<status status="PASS" starttime="20211019 22:04:54.504" endtime="20211019 22:04:54.508"/>
+</for>
+<status status="PASS" starttime="20211019 22:04:54.503" endtime="20211019 22:04:54.508"/>
+</kw>
+<status status="PASS" starttime="20211019 22:04:54.502" endtime="20211019 22:04:54.508"/>
 </test>
-<status status="PASS" starttime="20211019 20:49:29.124" endtime="20211019 20:49:29.159"/>
+<status status="PASS" starttime="20211019 22:04:54.464" endtime="20211019 22:04:54.509"/>
 </suite>
 <statistics>
 <total>
@@ -27,7 +66,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio3">Exercicio3</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio5">Exercicio5</stat>
 </suite>
 </statistics>
 <errors>
