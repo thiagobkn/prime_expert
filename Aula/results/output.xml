@@ -1,90 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 23:22:20.401" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 23:44:42.251" rpa="false" schemaversion="2">
 <suite id="s1" name="Teste" source="C:\Users\T-GAMER\Desktop\thiagobkn\PV\GIt hub\Prime\prime_expert\aula\teste.robot">
-<test id="s1-t1" name="area 51">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Iniciando Testes</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.307" endtime="20211019 23:44:42.308"/>
+</kw>
+<test id="s1-t1" name="Registro">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.308" endtime="20211019 23:44:42.309"/>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\nNome: ${pessoa1.nome}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.447" endtime="20211019 23:22:20.448"/>
+<status status="PASS" starttime="20211019 23:44:42.310" endtime="20211019 23:44:42.311"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Sobrenome: ${pessoa1.sobrenome}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.448" endtime="20211019 23:22:20.449"/>
+<status status="PASS" starttime="20211019 23:44:42.312" endtime="20211019 23:44:42.313"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Idade: ${pessoa1.idade}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.449" endtime="20211019 23:22:20.450"/>
+<status status="PASS" starttime="20211019 23:44:42.314" endtime="20211019 23:44:42.315"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Gênero: ${pessoa1.genero}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.450" endtime="20211019 23:22:20.451"/>
+<status status="PASS" starttime="20211019 23:44:42.315" endtime="20211019 23:44:42.317"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Data de nascimento: ${pessoa1.data_de_nascimento}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.451" endtime="20211019 23:22:20.452"/>
+<status status="PASS" starttime="20211019 23:44:42.318" endtime="20211019 23:44:42.320"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Comida favorita: ${pessoa1.comida_favorita}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.452" endtime="20211019 23:22:20.453"/>
+<status status="PASS" starttime="20211019 23:44:42.320" endtime="20211019 23:44:42.322"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.447" endtime="20211019 23:22:20.453"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.322" endtime="20211019 23:44:42.323"/>
+</kw>
+<tag>Registro</tag>
+<status status="PASS" starttime="20211019 23:44:42.308" endtime="20211019 23:44:42.323"/>
 </test>
-<test id="s1-t2" name="compras">
+<test id="s1-t2" name="Compras">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.324" endtime="20211019 23:44:42.324"/>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${Frutas[0]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.454" endtime="20211019 23:22:20.455"/>
+<status status="PASS" starttime="20211019 23:44:42.325" endtime="20211019 23:44:42.326"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Frutas[1]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.455" endtime="20211019 23:22:20.456"/>
+<status status="PASS" starttime="20211019 23:44:42.326" endtime="20211019 23:44:42.327"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Frutas[2]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.456" endtime="20211019 23:22:20.457"/>
+<status status="PASS" starttime="20211019 23:44:42.327" endtime="20211019 23:44:42.329"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Frutas[3]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.457" endtime="20211019 23:22:20.458"/>
+<status status="PASS" starttime="20211019 23:44:42.329" endtime="20211019 23:44:42.330"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Frutas[4]}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.459" endtime="20211019 23:22:20.460"/>
+<status status="PASS" starttime="20211019 23:44:42.330" endtime="20211019 23:44:42.332"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.454" endtime="20211019 23:22:20.460"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.332" endtime="20211019 23:44:42.333"/>
+</kw>
+<tag>Compras</tag>
+<status status="PASS" starttime="20211019 23:44:42.324" endtime="20211019 23:44:42.334"/>
 </test>
-<test id="s1-t3" name="email">
+<test id="s1-t3" name="E-mail">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.335" endtime="20211019 23:44:42.337"/>
+</kw>
 <kw name="criação do email" library="Exercicio3">
 <var>${email}</var>
 <arg>${pessoa3.nome}</arg>
 <arg>${pessoa3.sobrenome}</arg>
 <arg>${pessoa3.idade}</arg>
 <arg>${pessoa3.base_email}</arg>
-<msg timestamp="20211019 23:22:20.463" level="INFO">${email} = thiago_bassakin_21@robot.com</msg>
-<status status="PASS" starttime="20211019 23:22:20.461" endtime="20211019 23:22:20.463"/>
+<msg timestamp="20211019 23:44:42.340" level="INFO">${email} = thiago_bassakin_21@robot.com</msg>
+<status status="PASS" starttime="20211019 23:44:42.337" endtime="20211019 23:44:42.340"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${email}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.464" endtime="20211019 23:22:20.464"/>
+<status status="PASS" starttime="20211019 23:44:42.341" endtime="20211019 23:44:42.341"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.460" endtime="20211019 23:22:20.465"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.342" endtime="20211019 23:44:42.342"/>
+</kw>
+<tag>E-mail</tag>
+<status status="PASS" starttime="20211019 23:44:42.334" endtime="20211019 23:44:42.343"/>
 </test>
-<test id="s1-t4" name="resultado">
+<test id="s1-t4" name="Resultado">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.344" endtime="20211019 23:44:42.345"/>
+</kw>
 <kw name="contar de 0 a 9" library="Exercicio4">
 <kw name="Log To Console" library="BuiltIn">
 <arg>iniciando o loop</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.466" endtime="20211019 23:22:20.467"/>
+<status status="PASS" starttime="20211019 23:44:42.346" endtime="20211019 23:44:42.347"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${count}</var>
@@ -95,94 +138,105 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.467" endtime="20211019 23:22:20.468"/>
+<status status="PASS" starttime="20211019 23:44:42.347" endtime="20211019 23:44:42.349"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.467" endtime="20211019 23:22:20.468"/>
+<status status="PASS" starttime="20211019 23:44:42.347" endtime="20211019 23:44:42.349"/>
 </iter>
 <iter>
 <var name="${count}">1</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.468" endtime="20211019 23:22:20.468"/>
+<status status="PASS" starttime="20211019 23:44:42.349" endtime="20211019 23:44:42.351"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.468" endtime="20211019 23:22:20.468"/>
+<status status="PASS" starttime="20211019 23:44:42.349" endtime="20211019 23:44:42.351"/>
 </iter>
 <iter>
 <var name="${count}">2</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.468" endtime="20211019 23:22:20.469"/>
+<status status="PASS" starttime="20211019 23:44:42.351" endtime="20211019 23:44:42.352"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.468" endtime="20211019 23:22:20.469"/>
+<status status="PASS" starttime="20211019 23:44:42.351" endtime="20211019 23:44:42.352"/>
 </iter>
 <iter>
 <var name="${count}">3</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.469" endtime="20211019 23:22:20.469"/>
+<status status="PASS" starttime="20211019 23:44:42.353" endtime="20211019 23:44:42.354"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.469" endtime="20211019 23:22:20.469"/>
+<status status="PASS" starttime="20211019 23:44:42.353" endtime="20211019 23:44:42.355"/>
 </iter>
 <iter>
 <var name="${count}">4</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.470" endtime="20211019 23:22:20.470"/>
+<status status="PASS" starttime="20211019 23:44:42.355" endtime="20211019 23:44:42.357"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.470" endtime="20211019 23:22:20.470"/>
+<status status="PASS" starttime="20211019 23:44:42.355" endtime="20211019 23:44:42.357"/>
 </iter>
 <iter>
 <var name="${count}">5</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.471" endtime="20211019 23:22:20.471"/>
+<status status="PASS" starttime="20211019 23:44:42.357" endtime="20211019 23:44:42.358"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.470" endtime="20211019 23:22:20.471"/>
+<status status="PASS" starttime="20211019 23:44:42.357" endtime="20211019 23:44:42.358"/>
 </iter>
 <iter>
 <var name="${count}">6</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.471" endtime="20211019 23:22:20.472"/>
+<status status="PASS" starttime="20211019 23:44:42.359" endtime="20211019 23:44:42.359"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.471" endtime="20211019 23:22:20.472"/>
+<status status="PASS" starttime="20211019 23:44:42.358" endtime="20211019 23:44:42.359"/>
 </iter>
 <iter>
 <var name="${count}">7</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.472" endtime="20211019 23:22:20.472"/>
+<status status="PASS" starttime="20211019 23:44:42.359" endtime="20211019 23:44:42.360"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.472" endtime="20211019 23:22:20.472"/>
+<status status="PASS" starttime="20211019 23:44:42.359" endtime="20211019 23:44:42.360"/>
 </iter>
 <iter>
 <var name="${count}">8</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.473" endtime="20211019 23:22:20.474"/>
+<status status="PASS" starttime="20211019 23:44:42.360" endtime="20211019 23:44:42.361"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.472" endtime="20211019 23:22:20.474"/>
+<status status="PASS" starttime="20211019 23:44:42.360" endtime="20211019 23:44:42.361"/>
 </iter>
-<status status="PASS" starttime="20211019 23:22:20.467" endtime="20211019 23:22:20.474"/>
+<status status="PASS" starttime="20211019 23:44:42.347" endtime="20211019 23:44:42.361"/>
 </for>
 <kw name="Log To Console" library="BuiltIn">
 <arg>finalizando o loop</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.474" endtime="20211019 23:22:20.475"/>
+<status status="PASS" starttime="20211019 23:44:42.361" endtime="20211019 23:44:42.361"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.466" endtime="20211019 23:22:20.475"/>
+<status status="PASS" starttime="20211019 23:44:42.346" endtime="20211019 23:44:42.362"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.466" endtime="20211019 23:22:20.475"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.362" endtime="20211019 23:44:42.363"/>
+</kw>
+<tag>Resultado</tag>
+<status status="PASS" starttime="20211019 23:44:42.344" endtime="20211019 23:44:42.363"/>
 </test>
-<test id="s1-t5" name="paises">
+<test id="s1-t5" name="Paises">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.365" endtime="20211019 23:44:42.365"/>
+</kw>
 <kw name="paises" library="Exercicio5">
 <for flavor="IN">
 <var>${paises}</var>
@@ -192,58 +246,69 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.477" endtime="20211019 23:22:20.477"/>
+<status status="PASS" starttime="20211019 23:44:42.367" endtime="20211019 23:44:42.367"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.477" endtime="20211019 23:22:20.477"/>
+<status status="PASS" starttime="20211019 23:44:42.366" endtime="20211019 23:44:42.367"/>
 </iter>
 <iter>
 <var name="${paises}">USA</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.478" endtime="20211019 23:22:20.478"/>
+<status status="PASS" starttime="20211019 23:44:42.368" endtime="20211019 23:44:42.369"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.478" endtime="20211019 23:22:20.478"/>
+<status status="PASS" starttime="20211019 23:44:42.368" endtime="20211019 23:44:42.369"/>
 </iter>
 <iter>
 <var name="${paises}">Canada</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.478" endtime="20211019 23:22:20.479"/>
+<status status="PASS" starttime="20211019 23:44:42.369" endtime="20211019 23:44:42.370"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.478" endtime="20211019 23:22:20.479"/>
+<status status="PASS" starttime="20211019 23:44:42.369" endtime="20211019 23:44:42.371"/>
 </iter>
 <iter>
 <var name="${paises}">Alemanha</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.479" endtime="20211019 23:22:20.480"/>
+<status status="PASS" starttime="20211019 23:44:42.371" endtime="20211019 23:44:42.373"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.479" endtime="20211019 23:22:20.480"/>
+<status status="PASS" starttime="20211019 23:44:42.371" endtime="20211019 23:44:42.373"/>
 </iter>
 <iter>
 <var name="${paises}">Russia</var>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n${paises}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.480" endtime="20211019 23:22:20.480"/>
+<status status="PASS" starttime="20211019 23:44:42.373" endtime="20211019 23:44:42.374"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.480" endtime="20211019 23:22:20.480"/>
+<status status="PASS" starttime="20211019 23:44:42.373" endtime="20211019 23:44:42.374"/>
 </iter>
-<status status="PASS" starttime="20211019 23:22:20.477" endtime="20211019 23:22:20.480"/>
+<status status="PASS" starttime="20211019 23:44:42.366" endtime="20211019 23:44:42.375"/>
 </for>
-<status status="PASS" starttime="20211019 23:22:20.476" endtime="20211019 23:22:20.481"/>
+<status status="PASS" starttime="20211019 23:44:42.366" endtime="20211019 23:44:42.375"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.476" endtime="20211019 23:22:20.481"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.375" endtime="20211019 23:44:42.376"/>
+</kw>
+<tag>Paises</tag>
+<status status="PASS" starttime="20211019 23:44:42.364" endtime="20211019 23:44:42.376"/>
 </test>
-<test id="s1-t6" name="roleta de numeros">
+<test id="s1-t6" name="Roleta de numeros">
+<kw name="Log To Console" library="BuiltIn" type="SETUP">
+<arg>Testando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.378" endtime="20211019 23:44:42.379"/>
+</kw>
 <kw name="acertando o numero" library="Exercicio6">
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.483" endtime="20211019 23:22:20.483"/>
+<status status="PASS" starttime="20211019 23:44:42.380" endtime="20211019 23:44:42.381"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${count}</var>
@@ -256,29 +321,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.484"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.382" endtime="20211019 23:44:42.382"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.484"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.381" endtime="20211019 23:44:42.382"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.484"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.382" endtime="20211019 23:44:42.382"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.484"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.382" endtime="20211019 23:44:42.382"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.485"/>
+<status status="PASS" starttime="20211019 23:44:42.382" endtime="20211019 23:44:42.383"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.484" endtime="20211019 23:22:20.485"/>
+<status status="PASS" starttime="20211019 23:44:42.382" endtime="20211019 23:44:42.383"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.483" endtime="20211019 23:22:20.485"/>
+<status status="PASS" starttime="20211019 23:44:42.381" endtime="20211019 23:44:42.383"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.483" endtime="20211019 23:22:20.485"/>
+<status status="PASS" starttime="20211019 23:44:42.381" endtime="20211019 23:44:42.383"/>
 </iter>
 <iter>
 <var name="${count}">1</var>
@@ -287,29 +352,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.485"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.384" endtime="20211019 23:44:42.384"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.485"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.384" endtime="20211019 23:44:42.384"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.486"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.385" endtime="20211019 23:44:42.385"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.486"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.385" endtime="20211019 23:44:42.385"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.486"/>
+<status status="PASS" starttime="20211019 23:44:42.385" endtime="20211019 23:44:42.387"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.486"/>
+<status status="PASS" starttime="20211019 23:44:42.385" endtime="20211019 23:44:42.387"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.486"/>
+<status status="PASS" starttime="20211019 23:44:42.384" endtime="20211019 23:44:42.387"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.485" endtime="20211019 23:22:20.486"/>
+<status status="PASS" starttime="20211019 23:44:42.384" endtime="20211019 23:44:42.387"/>
 </iter>
 <iter>
 <var name="${count}">2</var>
@@ -318,29 +383,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.487"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.388" endtime="20211019 23:44:42.388"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.487"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.388" endtime="20211019 23:44:42.388"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.487"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.389" endtime="20211019 23:44:42.389"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.487"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.389" endtime="20211019 23:44:42.389"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.487"/>
+<status status="PASS" starttime="20211019 23:44:42.390" endtime="20211019 23:44:42.391"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.487"/>
+<status status="PASS" starttime="20211019 23:44:42.389" endtime="20211019 23:44:42.391"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.487"/>
+<status status="PASS" starttime="20211019 23:44:42.387" endtime="20211019 23:44:42.391"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.486" endtime="20211019 23:22:20.487"/>
+<status status="PASS" starttime="20211019 23:44:42.387" endtime="20211019 23:44:42.391"/>
 </iter>
 <iter>
 <var name="${count}">3</var>
@@ -349,29 +414,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.488"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.392"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.488"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.392"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.488"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.392"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.488"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.392"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.488"/>
+<status status="PASS" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.393"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.488" endtime="20211019 23:22:20.489"/>
+<status status="PASS" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.393"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.489"/>
+<status status="PASS" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.393"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.487" endtime="20211019 23:22:20.489"/>
+<status status="PASS" starttime="20211019 23:44:42.392" endtime="20211019 23:44:42.393"/>
 </iter>
 <iter>
 <var name="${count}">4</var>
@@ -380,29 +445,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.489"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.394" endtime="20211019 23:44:42.394"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.489"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.393" endtime="20211019 23:44:42.394"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.489"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.394" endtime="20211019 23:44:42.394"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.489"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.394" endtime="20211019 23:44:42.394"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.490"/>
+<status status="PASS" starttime="20211019 23:44:42.394" endtime="20211019 23:44:42.394"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.490"/>
+<status status="PASS" starttime="20211019 23:44:42.394" endtime="20211019 23:44:42.395"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.490"/>
+<status status="PASS" starttime="20211019 23:44:42.393" endtime="20211019 23:44:42.395"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.489" endtime="20211019 23:22:20.490"/>
+<status status="PASS" starttime="20211019 23:44:42.393" endtime="20211019 23:44:42.395"/>
 </iter>
 <iter>
 <var name="${count}">5</var>
@@ -411,29 +476,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.491"/>
+<status status="PASS" starttime="20211019 23:44:42.395" endtime="20211019 23:44:42.396"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.491"/>
+<status status="PASS" starttime="20211019 23:44:42.395" endtime="20211019 23:44:42.396"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.491"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.396" endtime="20211019 23:44:42.396"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.491"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.396" endtime="20211019 23:44:42.396"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.491"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.396" endtime="20211019 23:44:42.396"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.491"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.396" endtime="20211019 23:44:42.396"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.491"/>
+<status status="PASS" starttime="20211019 23:44:42.395" endtime="20211019 23:44:42.396"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.490" endtime="20211019 23:22:20.491"/>
+<status status="PASS" starttime="20211019 23:44:42.395" endtime="20211019 23:44:42.396"/>
 </iter>
 <iter>
 <var name="${count}">6</var>
@@ -442,29 +507,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.492"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.397"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.492"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.397"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.492"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.397"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.492"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.397"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.493"/>
+<status status="PASS" starttime="20211019 23:44:42.398" endtime="20211019 23:44:42.398"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.492" endtime="20211019 23:22:20.493"/>
+<status status="PASS" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.398"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.493"/>
+<status status="PASS" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.398"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.491" endtime="20211019 23:22:20.493"/>
+<status status="PASS" starttime="20211019 23:44:42.397" endtime="20211019 23:44:42.398"/>
 </iter>
 <iter>
 <var name="${count}">7</var>
@@ -473,29 +538,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.494" endtime="20211019 23:22:20.494"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.399"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.493" endtime="20211019 23:22:20.494"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.399"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.494" endtime="20211019 23:22:20.494"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.399"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.494" endtime="20211019 23:22:20.494"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.399"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.494" endtime="20211019 23:22:20.495"/>
+<status status="PASS" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.400"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.494" endtime="20211019 23:22:20.495"/>
+<status status="PASS" starttime="20211019 23:44:42.399" endtime="20211019 23:44:42.400"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.493" endtime="20211019 23:22:20.495"/>
+<status status="PASS" starttime="20211019 23:44:42.398" endtime="20211019 23:44:42.401"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.493" endtime="20211019 23:22:20.495"/>
+<status status="PASS" starttime="20211019 23:44:42.398" endtime="20211019 23:44:42.401"/>
 </iter>
 <iter>
 <var name="${count}">8</var>
@@ -504,29 +569,29 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.495"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.401" endtime="20211019 23:44:42.401"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.495"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.401" endtime="20211019 23:44:42.401"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.496"/>
+<status status="PASS" starttime="20211019 23:44:42.402" endtime="20211019 23:44:42.402"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.496"/>
+<status status="PASS" starttime="20211019 23:44:42.402" endtime="20211019 23:44:42.402"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.496"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.403" endtime="20211019 23:44:42.403"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.496"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.402" endtime="20211019 23:44:42.403"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.496"/>
+<status status="PASS" starttime="20211019 23:44:42.401" endtime="20211019 23:44:42.403"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.495" endtime="20211019 23:22:20.496"/>
+<status status="PASS" starttime="20211019 23:44:42.401" endtime="20211019 23:44:42.403"/>
 </iter>
 <iter>
 <var name="${count}">9</var>
@@ -535,43 +600,60 @@
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 5</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.497"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.404" endtime="20211019 23:44:42.404"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.497"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.404" endtime="20211019 23:44:42.404"/>
 </branch>
 <branch type="ELSE IF" condition="'${count}'=='8'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>acertei o numero: 8</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20211019 23:22:20.497" endtime="20211019 23:22:20.497"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.404" endtime="20211019 23:44:42.405"/>
 </kw>
-<status status="NOT RUN" starttime="20211019 23:22:20.497" endtime="20211019 23:22:20.497"/>
+<status status="NOT RUN" starttime="20211019 23:44:42.404" endtime="20211019 23:44:42.405"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>errei... mas tenho o numero: ${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211019 23:22:20.497" endtime="20211019 23:22:20.497"/>
+<status status="PASS" starttime="20211019 23:44:42.405" endtime="20211019 23:44:42.406"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.497" endtime="20211019 23:22:20.497"/>
+<status status="PASS" starttime="20211019 23:44:42.405" endtime="20211019 23:44:42.406"/>
 </branch>
-<status status="PASS" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.497"/>
+<status status="PASS" starttime="20211019 23:44:42.404" endtime="20211019 23:44:42.406"/>
 </if>
-<status status="PASS" starttime="20211019 23:22:20.496" endtime="20211019 23:22:20.497"/>
+<status status="PASS" starttime="20211019 23:44:42.403" endtime="20211019 23:44:42.406"/>
 </iter>
-<status status="PASS" starttime="20211019 23:22:20.483" endtime="20211019 23:22:20.497"/>
+<status status="PASS" starttime="20211019 23:44:42.381" endtime="20211019 23:44:42.406"/>
 </for>
-<status status="PASS" starttime="20211019 23:22:20.482" endtime="20211019 23:22:20.498"/>
+<status status="PASS" starttime="20211019 23:44:42.379" endtime="20211019 23:44:42.406"/>
 </kw>
-<status status="PASS" starttime="20211019 23:22:20.482" endtime="20211019 23:22:20.498"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando ${TEST_NAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.406" endtime="20211019 23:44:42.407"/>
+</kw>
+<tag>Roleta Russa</tag>
+<status status="PASS" starttime="20211019 23:44:42.377" endtime="20211019 23:44:42.408"/>
 </test>
-<status status="PASS" starttime="20211019 23:22:20.402" endtime="20211019 23:22:20.499"/>
+<kw name="Log To Console" library="BuiltIn" type="TEARDOWN">
+<arg>Finalizando Testes</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211019 23:44:42.409" endtime="20211019 23:44:42.410"/>
+</kw>
+<status status="PASS" starttime="20211019 23:44:42.253" endtime="20211019 23:44:42.410"/>
 </suite>
 <statistics>
 <total>
 <stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">Compras</stat>
+<stat pass="1" fail="0" skip="0">E-mail</stat>
+<stat pass="1" fail="0" skip="0">Paises</stat>
+<stat pass="1" fail="0" skip="0">Registro</stat>
+<stat pass="1" fail="0" skip="0">Resultado</stat>
+<stat pass="1" fail="0" skip="0">Roleta Russa</stat>
 </tag>
 <suite>
 <stat pass="6" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
