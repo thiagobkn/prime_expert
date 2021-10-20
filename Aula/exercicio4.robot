@@ -3,7 +3,7 @@ Library  Collections
 
 *** Keywords ***
 contar de 0 a 9
-    Log To Console    iniciando o loop
+    Log To Console    \niniciando o loop
     FOR  ${count}  IN RANGE  0  9
     Log To Console  ${count}
     END
