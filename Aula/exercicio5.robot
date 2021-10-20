@@ -9,7 +9,3 @@ paises
     FOR  ${paises}  IN  @{paises}
     Log To Console  \n${paises}
     END
-
-*** Test Cases ***
-Inicio
-    paises

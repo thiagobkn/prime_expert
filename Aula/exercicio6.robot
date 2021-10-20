@@ -13,7 +13,3 @@ acertando o numero
             Log To Console    errei... mas tenho o numero: ${count}
         END
     END
-
-*** Test Cases ***
-roleta de numeros
-    acertando o numero
