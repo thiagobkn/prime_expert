@@ -1,12 +1,12 @@
 *** Settings ***
 Suite Setup  Log To Console    Iniciando Testes
 Test Setup  Log To Console    Testando ${TEST_NAME}
-Resource  Exercicio1.robot
-Resource  Exercicio2.robot
-Resource  Exercicio3.robot
-Resource  Exercicio4.robot
-Resource  Exercicio5.robot
-Resource  Exercicio6.robot
+Resource  ../Exercicio1.robot
+Resource  ../Exercicio2.robot
+Resource  ../Exercicio3.robot
+Resource  ../Exercicio4.robot
+Resource  ../Exercicio5.robot
+Resource  ../Exercicio6.robot
 Test Teardown  Log To Console    Finalizando ${TEST_NAME}
 Suite Teardown  Log To Console    Finalizando Testes
 
