@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211023 16:25:23.440" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercicioweb1" source="C:\Users\thiag\Desktop\Thiagobkn\Nova pasta\prime_expert\aula\exercicios web\Web 1\exercicioweb1.robot">
+<test id="s1-t1" name="Blouse">
+<kw name="Acessar a Página">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211023 16:25:23.686" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20211023 16:25:23.686" endtime="20211023 16:25:31.533"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:23.686" endtime="20211023 16:25:31.533"/>
+</kw>
+<kw name="Digitar o que Pesquisar">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Locators.search_bar}</arg>
+<arg>Blouse</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211023 16:25:31.537" level="INFO">Typing text 'Blouse' into text field '//input[@id='search_query_top']'.</msg>
+<status status="PASS" starttime="20211023 16:25:31.535" endtime="20211023 16:25:31.609"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:31.534" endtime="20211023 16:25:31.609"/>
+</kw>
+<kw name="Pesquisar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Locators.search_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211023 16:25:31.611" level="INFO">Clicking element '//button[@name='submit_search']'.</msg>
+<status status="PASS" starttime="20211023 16:25:31.610" endtime="20211023 16:25:33.001"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:31.610" endtime="20211023 16:25:33.001"/>
+</kw>
+<kw name="Verificar">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//img[@title='Blouse']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211023 16:25:33.002" endtime="20211023 16:25:33.024"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:33.002" endtime="20211023 16:25:33.024"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:23.685" endtime="20211023 16:25:33.025"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211023 16:25:33.026" endtime="20211023 16:25:35.158"/>
+</kw>
+<status status="PASS" starttime="20211023 16:25:23.442" endtime="20211023 16:25:35.158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicioweb1">Exercicioweb1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
