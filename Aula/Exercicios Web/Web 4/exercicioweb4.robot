@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-# Suite Teardown  Close Browser
+Suite Teardown  Close Browser
 
 *** Variables ***
 ${URL}  http://automationpractice.com/index.php
@@ -11,13 +11,13 @@ ${browser}  chrome
 ...  Create=//*[@id="SubmitCreate"]
 ...  genre=//label[contains(@for,'id_gender1')]
 &{INFO}
-...  Email=thiagobkn@gmail.com
+...  Email=antonio.cabralbkn@gmail.com
 ...  F_name=Thiago
 ...  L_name=Bassakin
 ...  Password=alooo
 ...  endereço=minhacasa
 ...  cidade=minha cidade
-...  postalcode=DY2 8JU
+...  postalcode=00000
 ...  fone=11999999999
 
 *** Keywords ***
@@ -58,11 +58,15 @@ preencher
     Input Text    //*[@id="postcode"]      ${INFO.postalcode}
     Input Text    //*[@id="phone_mobile"]  ${INFO.fone}
     Input Text    //input[@id='alias']     ${INFO.endereço}
+concluir
+    Click Element    //*[@id="submitAccount"]/span
+verificar
+    Wait Until Element Is Visible    //*[@id="center_column"]/h1
 *** Test Cases ***
 create account
     Acessar a Página
     Sign-in
     Email
     preencher
-    # concluir
-    # verificar
+    concluir
+    verificar

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 10:29:03.876" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercicioweb4" source="C:\Users\thiag\Desktop\Thiagobkn\Nova pasta\prime_expert\aula\exercicios web\web 4\exercicioweb4.robot">
+<test id="s1-t1" name="create account">
+<kw name="Acessar a Página">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211024 10:29:04.116" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20211024 10:29:04.115" endtime="20211024 10:29:10.341"/>
+</kw>
+<status status="PASS" starttime="20211024 10:29:04.114" endtime="20211024 10:29:10.341"/>
+</kw>
+<kw name="Sign-in">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locators.Sing_in}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211024 10:29:10.343" level="INFO">Clicking element '//a[contains(@class,'login')]'.</msg>
+<status status="PASS" starttime="20211024 10:29:10.342" endtime="20211024 10:29:12.075"/>
+</kw>
+<status status="PASS" starttime="20211024 10:29:10.342" endtime="20211024 10:29:12.075"/>
+</kw>
+<kw name="Email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locators.Email_bar}</arg>
+<arg>${INFO.Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211024 10:29:12.077" level="INFO">Typing text 'antonio.cabralbkn@gmail.com' into text field '//input[@id='email_create']'.</msg>
+<status status="PASS" starttime="20211024 10:29:12.076" endtime="20211024 10:29:12.157"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locators.Create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211024 10:29:12.158" level="INFO">Clicking element '//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20211024 10:29:12.157" endtime="20211024 10:29:12.202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="account-creation_form"]/div[1]/h3</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211024 10:29:17.529" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 10:29:17.401" endtime="20211024 10:29:17.529"/>
+</kw>
+<msg timestamp="20211024 10:29:17.589" level="FAIL">Element '//*[@id="account-creation_form"]/div[1]/h3' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20211024 10:29:12.202" endtime="20211024 10:29:17.589"/>
+</kw>
+<status status="FAIL" starttime="20211024 10:29:12.076" endtime="20211024 10:29:17.590"/>
+</kw>
+<kw name="preencher">
+<status status="NOT RUN" starttime="20211024 10:29:17.590" endtime="20211024 10:29:17.590"/>
+</kw>
+<kw name="concluir">
+<status status="NOT RUN" starttime="20211024 10:29:17.591" endtime="20211024 10:29:17.591"/>
+</kw>
+<kw name="verificar">
+<status status="NOT RUN" starttime="20211024 10:29:17.591" endtime="20211024 10:29:17.591"/>
+</kw>
+<status status="FAIL" starttime="20211024 10:29:04.112" endtime="20211024 10:29:17.591">Element '//*[@id="account-creation_form"]/div[1]/h3' not visible after 5 seconds.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211024 10:29:17.594" endtime="20211024 10:29:19.747"/>
+</kw>
+<status status="FAIL" starttime="20211024 10:29:03.878" endtime="20211024 10:29:19.747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Exercicioweb4">Exercicioweb4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
