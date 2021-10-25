@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 23:46:18.165" rpa="true" schemaversion="2">
+<suite id="s1" name="Exerciciomobile" source="C:\Users\thiag\Desktop\Thiagobkn\Nova pasta\prime_expert\aula\exercicios mobile\exerciciomobile.robot">
+<kw name="Open Application" library="AppiumLibrary" type="SETUP">
+<arg>remote_url=http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.apps.youtube.app.WatchWhileActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 23:46:18.391" endtime="20211024 23:46:30.253"/>
+</kw>
+<test id="s1-t1" name="mobile 1">
+<kw name="pesquisar">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>15</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 23:46:30.255" endtime="20211024 23:46:30.256"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:46:35.269" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211024 23:46:30.256" endtime="20211024 23:46:35.269"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Search</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:35.269" endtime="20211024 23:46:36.091"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Search</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:36.093" level="INFO">Clicking element 'accessibility_id=Search'.</msg>
+<status status="PASS" starttime="20211024 23:46:36.091" endtime="20211024 23:46:36.171"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/search_edit_text</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:36.171" endtime="20211024 23:46:37.160"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/search_edit_text</arg>
+<arg>adrenaline</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:37.162" level="INFO">Typing text 'adrenaline' into text field 'id=com.google.android.youtube:id/search_edit_text'</msg>
+<status status="PASS" starttime="20211024 23:46:37.160" endtime="20211024 23:46:37.817"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>66</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 23:46:37.817" endtime="20211024 23:46:38.583"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:30.255" endtime="20211024 23:46:38.584"/>
+</kw>
+<kw name="selecionar o canal">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/channel_name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:38.585" endtime="20211024 23:46:40.758"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/channel_name</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:40.760" level="INFO">Clicking element 'id=com.google.android.youtube:id/channel_name'.</msg>
+<status status="PASS" starttime="20211024 23:46:40.759" endtime="20211024 23:46:40.816"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:38.584" endtime="20211024 23:46:40.817"/>
+</kw>
+<kw name="ir em playlist">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Playlists</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:40.817" endtime="20211024 23:46:42.086"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Playlists</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:42.088" level="INFO">Clicking element 'accessibility_id=Playlists'.</msg>
+<status status="PASS" starttime="20211024 23:46:42.087" endtime="20211024 23:46:42.132"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:40.817" endtime="20211024 23:46:42.132"/>
+</kw>
+<kw name="selecionar a playlist">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[@content-desc="Intel Arc - by Adrenaline - 2 videos"]/android.widget.ImageView[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:42.133" endtime="20211024 23:46:43.078"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[@content-desc="Intel Arc - by Adrenaline - 2 videos"]/android.widget.ImageView[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:43.080" level="INFO">Clicking element 'xpath=//android.view.ViewGroup[@content-desc="Intel Arc - by Adrenaline - 2 videos"]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" starttime="20211024 23:46:43.079" endtime="20211024 23:46:43.167"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:42.133" endtime="20211024 23:46:43.167"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:30.253" endtime="20211024 23:46:43.168"/>
+</test>
+<test id="s1-t2" name="mobile 2">
+<kw name="voltar ao iniciar">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Home"]/android.widget.ImageView</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:43.170" endtime="20211024 23:46:44.333"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Home"]/android.widget.ImageView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:44.335" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Home"]/android.widget.ImageView'.</msg>
+<status status="PASS" starttime="20211024 23:46:44.334" endtime="20211024 23:46:44.412"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:43.169" endtime="20211024 23:46:44.413"/>
+</kw>
+<kw name="Logar uma conta">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Account</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:44.414" endtime="20211024 23:46:45.558"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Account</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:45.559" level="INFO">Clicking element 'accessibility_id=Account'.</msg>
+<status status="PASS" starttime="20211024 23:46:45.558" endtime="20211024 23:46:45.607"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:45.607" endtime="20211024 23:46:46.543"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:46.545" level="INFO">Clicking element 'id=com.google.android.youtube:id/button'.</msg>
+<status status="PASS" starttime="20211024 23:46:46.543" endtime="20211024 23:46:46.577"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Add account</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:46.577" endtime="20211024 23:46:47.276"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Add account</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:47.278" level="INFO">Clicking element 'accessibility_id=Add account'.</msg>
+<status status="PASS" starttime="20211024 23:46:47.276" endtime="20211024 23:46:47.308"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id="identifierId"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:47.308" endtime="20211024 23:46:55.024"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id="identifierId"]</arg>
+<arg>${INFO.email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:55.026" level="INFO">Typing text 'antonio.cabralbkn@gmail.com' into text field 'xpath=//android.widget.EditText[@resource-id="identifierId"]'</msg>
+<status status="PASS" starttime="20211024 23:46:55.024" endtime="20211024 23:46:55.093"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="identifierNext"]//android.widget.Button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:55.093" endtime="20211024 23:46:55.621"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="identifierNext"]//android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:55.623" level="INFO">Clicking element 'xpath=//android.view.View[@resource-id="identifierNext"]//android.widget.Button'.</msg>
+<status status="PASS" starttime="20211024 23:46:55.621" endtime="20211024 23:46:55.710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="password"]//android.widget.EditText</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:55.710" endtime="20211024 23:46:58.775"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="password"]//android.widget.EditText</arg>
+<arg>${INFO.senha}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:58.777" level="INFO">Typing text 'bkn.123456' into text field 'xpath=//android.view.View[@resource-id="password"]//android.widget.EditText'</msg>
+<status status="PASS" starttime="20211024 23:46:58.775" endtime="20211024 23:46:58.840"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="passwordNext"]//android.widget.Button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:58.840" endtime="20211024 23:46:59.376"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="passwordNext"]//android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:46:59.378" level="INFO">Clicking element 'xpath=//android.view.View[@resource-id="passwordNext"]//android.widget.Button'.</msg>
+<status status="PASS" starttime="20211024 23:46:59.377" endtime="20211024 23:46:59.473"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="signinconsentNext"]//android.widget.Button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:46:59.473" endtime="20211024 23:47:06.215"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="signinconsentNext"]//android.widget.Button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:47:06.217" level="INFO">Clicking element 'xpath=//android.view.View[@resource-id="signinconsentNext"]//android.widget.Button'.</msg>
+<status status="PASS" starttime="20211024 23:47:06.215" endtime="20211024 23:47:06.296"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.gms:id/sud_items_switch</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:47:06.296" endtime="20211024 23:47:16.763"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.gms:id/sud_items_switch</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:47:16.766" level="INFO">Clicking element 'id=com.google.android.gms:id/sud_items_switch'.</msg>
+<status status="PASS" starttime="20211024 23:47:16.763" endtime="20211024 23:47:16.890"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>541</arg>
+<arg>1491</arg>
+<arg>541</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:16.890" endtime="20211024 23:47:18.396"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="ACCEPT"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:47:18.396" endtime="20211024 23:47:18.578"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="ACCEPT"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:47:18.581" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="ACCEPT"]'.</msg>
+<status status="PASS" starttime="20211024 23:47:18.578" endtime="20211024 23:47:18.690"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:44.413" endtime="20211024 23:47:18.691"/>
+</kw>
+<kw name="scrolar a tela">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]/android.widget.TextView</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 23:47:18.692" endtime="20211024 23:47:27.981"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]/android.widget.TextView</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 23:47:27.983" level="INFO">Clicking element 'xpath=//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20211024 23:47:27.981" endtime="20211024 23:47:28.160"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:33.176" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211024 23:47:28.160" endtime="20211024 23:47:33.176"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>5</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:33.176" endtime="20211024 23:47:35.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:36.367" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:35.363" endtime="20211024 23:47:36.367"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:33.176" endtime="20211024 23:47:36.367"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:36.367" endtime="20211024 23:47:44.140"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:45.142" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:44.141" endtime="20211024 23:47:45.142"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:36.367" endtime="20211024 23:47:45.142"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:45.142" endtime="20211024 23:47:48.494"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:49.504" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:48.494" endtime="20211024 23:47:49.504"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:45.142" endtime="20211024 23:47:49.504"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:49.504" endtime="20211024 23:47:51.628"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:52.637" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:51.628" endtime="20211024 23:47:52.637"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:49.504" endtime="20211024 23:47:52.637"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:52.637" endtime="20211024 23:47:55.124"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:56.133" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:55.124" endtime="20211024 23:47:56.133"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:52.637" endtime="20211024 23:47:56.133"/>
+</iter>
+<status status="PASS" starttime="20211024 23:47:33.176" endtime="20211024 23:47:56.133"/>
+</for>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>548</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:47:56.133" endtime="20211024 23:47:58.604"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:47:59.608" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:47:58.604" endtime="20211024 23:47:59.608"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:18.691" endtime="20211024 23:47:59.608"/>
+</kw>
+<kw name="clicar no video">
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>534</arg>
+<arg>880</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 23:47:59.610" level="INFO">Pressing at (534, 880).</msg>
+<status status="PASS" starttime="20211024 23:47:59.609" endtime="20211024 23:48:01.126"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:06.132" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211024 23:48:01.126" endtime="20211024 23:48:06.132"/>
+</kw>
+<status status="PASS" starttime="20211024 23:47:59.608" endtime="20211024 23:48:06.132"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:43.169" endtime="20211024 23:48:06.133"/>
+</test>
+<test id="s1-t3" name="mobile 3">
+<kw name="voltar">
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 23:48:06.135" endtime="20211024 23:48:07.074"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:08.083" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:07.074" endtime="20211024 23:48:08.083"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 23:48:08.083" endtime="20211024 23:48:09.203"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:14.210" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211024 23:48:09.203" endtime="20211024 23:48:14.210"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:06.135" endtime="20211024 23:48:14.210"/>
+</kw>
+<kw name="scrolar">
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>5</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:14.211" endtime="20211024 23:48:15.929"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:16.944" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:15.929" endtime="20211024 23:48:16.944"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:14.211" endtime="20211024 23:48:16.944"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:16.944" endtime="20211024 23:48:18.450"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:19.463" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:18.450" endtime="20211024 23:48:19.463"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:16.944" endtime="20211024 23:48:19.463"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:19.463" endtime="20211024 23:48:21.067"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:22.069" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:21.068" endtime="20211024 23:48:22.069"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:19.463" endtime="20211024 23:48:22.069"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:22.069" endtime="20211024 23:48:23.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:24.705" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:23.692" endtime="20211024 23:48:24.705"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:22.069" endtime="20211024 23:48:24.705"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>250</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:24.705" endtime="20211024 23:48:26.367"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:27.380" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:26.367" endtime="20211024 23:48:27.380"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:24.705" endtime="20211024 23:48:27.380"/>
+</iter>
+<status status="PASS" starttime="20211024 23:48:14.211" endtime="20211024 23:48:27.380"/>
+</for>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>548</arg>
+<arg>1500</arg>
+<arg>548</arg>
+<arg>548</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 23:48:27.380" endtime="20211024 23:48:28.835"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 23:48:29.840" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 23:48:28.835" endtime="20211024 23:48:29.840"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:14.211" endtime="20211024 23:48:29.840"/>
+</kw>
+<kw name="clicar no video 2">
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>534</arg>
+<arg>880</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 23:48:29.843" level="INFO">Pressing at (534, 880).</msg>
+<status status="PASS" starttime="20211024 23:48:29.841" endtime="20211024 23:48:31.154"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:29.841" endtime="20211024 23:48:31.154"/>
+</kw>
+<status status="PASS" starttime="20211024 23:48:06.134" endtime="20211024 23:48:31.154"/>
+</test>
+<kw name="Close All Applications" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20211024 23:48:31.156" endtime="20211024 23:48:32.127"/>
+</kw>
+<status status="PASS" starttime="20211024 23:46:18.167" endtime="20211024 23:48:32.127"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Exerciciomobile">Exerciciomobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
