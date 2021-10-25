@@ -102,7 +102,7 @@ scrolar
 clicar no video 2
     Click Element At Coordinates    534    880
 
-*** Tasks ***
+*** Test Cases ***
 mobile 1
     pesquisar
     selecionar o canal
